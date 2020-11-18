@@ -1,0 +1,7 @@
+(defun contarn(lista &optional (cont 0))
+  (cond
+  ((null lista) cont)
+  ((numberp (car lista)) (contarn (cdr lista)(+ cont 1)))
+  (T(contarn (cdr lista) cont))
+  )
+)

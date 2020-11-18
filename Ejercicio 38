@@ -1,0 +1,16 @@
+(defun contiene(lista valor)
+  (cond
+   ((null lista) nil)
+   ((Equal (car lista) valor) T)
+   (T (contiene(cdr lista) valor))
+   )
+)
+
+(defun puedoformarC (A B C)
+  (cond
+   ((null C) T)
+   ((Equal (contiene A (car C)) T) (puedoformarC A B (cdr C)))
+   ((Equal (contiene B (car C)) T) (puedoformarC A B (cdr C)))
+   (T NIL)
+   )
+)
