@@ -1,0 +1,14 @@
+
+CL-USER 1 > (contarn '(4 b))
+1
+
+CL-USER 2 > (contarn '(4 3 2 1 b))
+4
+
+CL-USER 3 > (contarn '(1 2 a b 3 c 4 s 0))
+5
+
+CL-USER 4 > (contarn '(1 2 a b 3 c 4 s 0))
+5
+
+CL-USER 5 > 
